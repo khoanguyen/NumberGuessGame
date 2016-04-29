@@ -1,0 +1,3 @@
+Check og character input (line 50)
+Extend input checking condition (line 63)
+Print error message for invalid input (line 64-67)

@@ -1,0 +1,2 @@
+Increase number range to 1000 (line 38)
+Modified input check to 1000 (line 64)

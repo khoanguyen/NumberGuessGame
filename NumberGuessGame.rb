@@ -46,7 +46,6 @@ class Game
  
             reply = STDIN.gets
             reply.chop!
-            
             # checking for invalid input
             hasCharacter = (reply =~ /^\d+$/) == nil
  
@@ -63,7 +62,8 @@ class Game
             # Show error message for invalid input
             if reply < 1 or reply > 1000 or hasCharacter then
                 Console_Screen.cls
-                print "Invalid input! Press Enter to continue."
+                print "Invalid input! Input number only. Press Enter to continue." if hasCharacter
+                print "Invalid input! Guessing out of range. Press Enter to continue." unless hasCharacter
                 Console_Screen.pause
                 redo # redo the ciurrent iteration of the loop
             end

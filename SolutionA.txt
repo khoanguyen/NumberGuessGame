@@ -1,0 +1,5 @@
+Added 2 private members, $gameCount and $guessCount to Game class (line 104 - 105)
+Before starting game, initialize guess count for each game (line 140)
+For every guess, increase guess count (line 71)
+When game endding, increase game played by 1 (line 145)
+Print the statistic of playing (line 149-150)
